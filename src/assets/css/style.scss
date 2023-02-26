@@ -16,18 +16,7 @@
     margin: 0 auto;
 }
 .button{
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.4px;
-    text-transform: uppercase;
-    color: #000000;
-    text-decoration: none;
-    border-radius: 30px;
-    padding: 22px 0;
+    
 }
 
 .wrapper{
@@ -38,16 +27,14 @@
     }
 }
 .button{
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     letter-spacing: 0.4px;
     text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 22px 0;
     background: #FFFFFF;
     border: 1px solid #000000;
     color: #000000;
@@ -55,6 +42,9 @@
     transition: all .3s;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:after {
         content: "";
         height: 200%;
@@ -74,7 +64,7 @@
     );
     }
     &:hover{
-        background: #e97c00;
+        background: #FDD836;
 
     }
     &:hover:after {
