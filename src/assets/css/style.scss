@@ -1,0 +1,143 @@
+@import './fonts.scss';
+@import './animations.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2';
+}
+#app{
+    background: #E2E2E2;
+    padding: 80px 0;
+
+}
+.container{
+    max-width: 1444px;
+    margin: 0 auto;
+}
+.button{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 22px 0;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    &__center{
+        align-items: center;
+    }
+}
+.button{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    color: #000000;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    &:after {
+        content: "";
+        height: 200%;
+        left: -230%;
+        opacity: 0;
+        position: absolute;
+        top: -20%;
+        transform: rotate(-30deg);
+        width: 200%;
+        background: rgba(255, 255, 255, 0.13);
+        background: linear-gradient(
+          to right, 
+          rgba(255, 255, 255, 0.13) 0%,
+          rgba(255, 255, 255, 0.13) 77%,
+          rgba(255, 255, 255, 0.5) 92%,
+          rgba(255, 255, 255, 0.0) 100%
+    );
+    }
+    &:hover{
+        background: #e97c00;
+
+    }
+    &:hover:after {
+        left: -50%;
+        opacity: 1;
+        top: -50%;
+        transition-duration: 0.7s, 0.7s, 0.15s;
+        transition-property: left, top, opacity;
+        transition-timing-function: ease;
+    }
+    &:active:after {
+        opacity: 0;
+      }
+}
+.header{
+    &__image{
+        width: 60%;
+    }
+    &__box{
+        width: 38%;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.7px;
+        color: #1D1D1B;
+    }
+    &__button{
+        margin-top: 20px;
+    }
+}
+
+.section{
+    &__box{
+        margin-top: 40px;
+    }
+}
+
+.box{
+    padding: 20px 22px;
+    border-radius: 20px;
+    &__wrapper{
+        display: flex;
+    }
+    &__strategy{
+        background: #F3F6FF;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.7px;
+        color: #1D1D1B;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 42px;
+        letter-spacing: -1.3px;
+        text-transform: uppercase;
+        width: min-content;
+        color: #FDD836;
+    }
+}
