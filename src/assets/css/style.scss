@@ -15,15 +15,14 @@
     max-width: 1444px;
     margin: 0 auto;
 }
-.button{
-    
-}
-
 .wrapper{
     display: flex;
     justify-content: space-between;
     &__center{
         align-items: center;
+    }
+    &__stretch{
+        margin-top: 50px;
     }
 }
 .button{
@@ -103,16 +102,64 @@
     &__box{
         margin-top: 40px;
     }
+    &__title{
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -1.3px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 16px;    
+    }
+    &__games{
+        margin-top: 70px;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.7px;
+        color: #1D1D1B;
+    }
+    &__list{
+        padding-left: 40px;
+        margin: 20px 0;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.7px;
+        color: #1D1D1B;
+    }
+    &__earn{
+        margin-top: 50px;
+    }
 }
 
 .box{
     padding: 20px 22px;
     border-radius: 20px;
+    box-sizing: border-box;
     &__wrapper{
         display: flex;
     }
     &__strategy{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
         background: #F3F6FF;
+        &__title{
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 42px;
+            letter-spacing: -1.3px;
+            text-transform: uppercase;
+            color: #FDD836;
+            &-span{
+                color: #000;
+            }
+        }
+        
     }
     &__text{
         font-weight: 400;
@@ -128,6 +175,121 @@
         letter-spacing: -1.3px;
         text-transform: uppercase;
         width: min-content;
+        margin-bottom: 5px;
         color: #FDD836;
+    }
+    &.bonus{
+        background: #FDD836;
+        padding: 20px 27px  20px 22px;
+        width: 38%;
+    }
+    .bonus{
+        &__title{
+            color: #000000 !important;
+            &-span{
+                display: block;
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__games{
+        max-width: 582px;
+        background: #FDD836;
+    }
+    &__games{
+        &-title{
+            color:#000;
+            margin-bottom: 25px;
+            &-span{
+                color:#fff;
+            }
+        }
+    }
+    &.test{
+        width: 57%;
+        background: #fff;
+    }
+}
+.strategy{
+    &__text{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.7px;
+        color: #1D1D1B;
+        &:last-child{
+            margin-top: auto;
+        }
+    }
+}
+
+.games{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // min-width: 583px;
+    .game{
+        width: 240px;
+        margin-bottom: 25px;
+        &__title{
+            background: #fff;
+            padding: 0 10px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: -0.7px;
+            color: #1D1D1B;
+            margin-bottom: 20px;
+            span{
+                display: block;
+            }
+        }
+        &__item{
+            font-weight: 400;
+            list-style-type: none;
+            &::before{
+                content:'→'
+            }
+        }
+        // &:nth-child(2n+1){
+        //    margin-right: 55px;
+        // }
+    }
+}
+
+.test{
+    &__title{
+        color: #FDD836;
+        width: auto;
+        span{
+            display: block;
+            color:#000;
+            margin-bottom: 15px;
+        }
+    }
+    &__text{
+        max-width: 372px;
+        &:last-child{
+            margin-top: 20px;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    &__text{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.7px;
+        text-align: center;
+        max-width: 855px;
+        color: #1D1D1B;
+        margin-bottom: 25px;
     }
 }
